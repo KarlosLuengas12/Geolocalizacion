@@ -32,12 +32,14 @@
         function GetMap() {
             //Initialize a map instance.
             map = new atlas.Map('myMap', {
-                center: [-118.270293, 34.039737],
+                center: [-98.1516198071536, 19.05847425],
                 zoom: 14,
                 view: 'Auto',
-                image: 'pin-round-darkblue',
+                iconOptions: {
+                        image: 'pin-round-darkblue',
                         anchor: 'center',
-                        allowOverlap: true,
+                        allowOverlap: true
+                    },
 
                 //Add authentication details for connecting to Azure Maps.
                 authOptions: {
@@ -96,8 +98,26 @@
                         showPopup(e.shapes[0]);
                     }
                 });
+                addDefaultMarkers();
             });
         }
+
+        function addDefaultMarkers() {
+    var locations = [
+        { coordinates: [ -98.1516198071536, 19.05847425], name: "Location 1" },
+        { coordinates: [  -98.1983963875387, 19.04281015], name: "Location 2" },
+        { coordinates: [-98.1870100851584, 19.0577841], name: "Location 3" },
+        { coordinates: [-98.2226237, 19.0537911], name: "Location 4" }
+       
+    ];
+
+    locations.forEach(function (location) {
+        var marker = new atlas.Shape(new atlas.data.Point(location.coordinates));
+        marker.addProperty('name', location.name);
+        datasource.add([marker]);
+    });
+}
+
         function searchInputKeyup(e) {
             centerMapOnResults = false;
             if (searchInput.value.length >= minSearchInputLength) {
