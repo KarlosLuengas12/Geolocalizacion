@@ -1,13 +1,14 @@
 # Geolocalizacion
 Azure geolocalizacion Mayra-Karlos
 
-creación de un mapa de búsqueda interactivo con Azure Maps
+#creación de un mapa de búsqueda interactivo con Azure Maps
 
-Este inicio rápido demuestra cómo usar Azure Maps para crear un mapa que brinde a los usuarios una experiencia de búsqueda interactiva. Lo guía a través de estos pasos básicos:
+#Este inicio rápido demuestra cómo usar Azure Maps para crear un mapa que brinde a los usuarios una experiencia de búsqueda interactiva. Lo guía a través de estos pasos básicos:
 
-Cree su propia cuenta de Azure Maps.
-Obtenga su clave de suscripción de Azure Maps para usarla en la aplicación web de demostración.
-Descargue y abra la aplicación de mapas de demostración.
+*Cree su propia cuenta de Azure Maps.
+*Obtenga su clave de suscripción de Azure Maps para usarla en la aplicación web de demostración.
+*Descargue y abra la aplicación de mapas de demostración.
+
 Este inicio rápido usa el SDK web de Azure Maps; sin embargo, el servicio Azure Maps se puede usar con cualquier control de mapa, como estos controles de mapas populares de código abierto para los que el equipo de Azure Maps ha creado complementos.
 
 Requisitos previos
@@ -27,13 +28,15 @@ Seleccione Azure Maps en la lista desplegable que aparece y luego seleccione el 
 
 En la página de recursos Crear una cuenta de Azure Maps , ingrese los siguientes valores y luego seleccione el botón Crear :
 
-*La suscripción que desea utilizar para esta cuenta.
-*El nombre del grupo de recursos para esta cuenta. Puede optar por Crear un grupo de recursos nuevo o Seleccionar un grupo de recursos existente .
-*El nombre de su nueva cuenta de Azure Maps.
-*El nivel de precios para esta cuenta. Seleccione Gen2 .
-*Lea la Declaración de licencia y privacidad y luego seleccione la casilla de verificación para aceptar los términos.
-*Captura de pantalla que muestra la página de recursos Crear una cuenta de Azure Maps en Azure Portal.
 
+*La suscripción que desea utilizar para esta cuenta.
+	
+*El nombre del grupo de recursos para esta cuenta. Puede optar por Crear un grupo de recursos nuevo o Seleccionar un grupo de recursos existente .	
+*El nombre de su nueva cuenta de Azure Maps.	
+*El nivel de precios para esta cuenta. Seleccione Gen2 .	
+*Lea la Declaración de licencia y privacidad y luego seleccione la casilla de verificación para aceptar los términos.	
+*Captura de pantalla que muestra la página de recursos Crear una cuenta de Azure Maps en Azure Portal.	
+	
 Obtenga la clave de suscripción para su cuenta
 Una vez que su cuenta de Azure Maps se haya creado correctamente, recupere la clave de suscripción que le permite consultar las API de Maps.
 
