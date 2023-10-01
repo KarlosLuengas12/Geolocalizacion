@@ -71,3 +71,42 @@ Una vez que su cuenta de Azure Maps se haya creado correctamente, recupere la cl
 
 5.Mueva el mouse sobre la lista de direcciones y ubicaciones que aparecen debajo del cuadro de búsqueda. Observe cómo el pin correspondiente en el mapa muestra información sobre esa ubicación. Para garantizar la privacidad de las empresas privadas, se muestran nombres y direcciones ficticios.
 
+#Poner varias ubicaciones como predeterminado 
+
+Las ubicaciones que se mostraran son las sientes:
+		Universidad Tecnológica de Puebla.
+		Catedral de la Cd. de Puebla.
+		Fuerte de Loreto.
+		Fuente de los Frailes.
+
+1.Primero se declara la funcion addDefaultMarkers en donde se almacenan todas las ubicaciones y se manda a llamar la funcion marker:
+
+ function addDefaultMarkers() {
+    var locations = [
+        { coordinates: [ -98.1516198071536, 19.05847425], name: "Location 1" },
+        { coordinates: [  -98.1983963875387, 19.04281015], name: "Location 2" },
+        { coordinates: [-98.1870100851584, 19.0577841], name: "Location 3" },
+        { coordinates: [-98.2226237, 19.0537911], name: "Location 4" }
+        // Add more locations as needed
+    ];
+
+    locations.forEach(function (location) {
+        var marker = new atlas.Shape(new atlas.data.Point(location.coordinates));
+        marker.addProperty('name', location.name);
+        datasource.add([marker]);
+    });
+}
+
+
+2.Despues se manda a llamar la funcion addDefaultMarkers dentro de la funcion GetMap: 
+
+addDefaultMarkers();
+
+3. Dentro de la variable map se pondra en el center las coordenadas de la Universidad Tecnologica de Puebla como punto de partida cundo el HTML se ejecute:
+
+center: [-98.1516198071536, 19.05847425],
+
+
+
+
+
