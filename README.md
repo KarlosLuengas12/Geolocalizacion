@@ -1,6 +1,6 @@
 # Geolocalizacion
 Azure geolocalizacion Mayra-Karlos
-[![Evidencia-geolocalizacion.png](https://i.postimg.cc/wxrGWYVc/Evidencia-geolocalizacion.png)](https://postimg.cc/nMv2z5NC)
+[![Evidencia-geolocalizacion.png](https://i.postimg.cc/ZY8nJBPs/Evidencia-geolocalizacion.png)](https://postimg.cc/14zsHzjD)
 Azure Maps nos permite crear un mapa donde brinda una experiencia de búsqueda interactiva para los usuarios. Acontinuacion se explicaran los pasos básicos para su uso en algun proyecto:
 
 1.Se debe de crea una cuenta en Azure Maps.
